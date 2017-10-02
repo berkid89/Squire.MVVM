@@ -1,0 +1,14 @@
+<ol style="background: lightgoldenrodyellow;">
+  <li>
+    <span>{{DataContext.name}}</span>
+  </li>
+  <li>
+    <span>{{DataContext.isValid}}</span>
+  </li>
+  <li>
+    <span>{{DataContext.address}}</span>
+  </li>
+  <li>
+    <button *ngIf="DataContext.changeNameCommand.canExecute()" (click)="DataContext.changeNameCommand.execute()">+1</button>
+  </li>
+</ol>
